@@ -23,9 +23,20 @@ let b1 = new Bottle();
 // constructor -> human maker
 // constructor-> biscuit maker
 class BottleMaker {
-    constructor(name, price) {
-        this.name = name;
+    constructor(brand, price, color, material) {
+        this.brand = brand;
         this.price = price;
+        this.color = color;
+        this.material = material;
+    }
+}
+class Music {
+    constructor(name, artist, thumbnail = "semethumbnail.jpg", length, free) {
+        this.name = name;
+        this.artist = artist;
+        this.thumbnail = thumbnail;
+        this.length = length;
+        this.free = free;
     }
 }
 class HumanMaker {
@@ -39,7 +50,9 @@ class HumanMaker {
 // class HumanMaker2 {
 // constructor(public a: string, age: number = 0) {}
 // }
-let b2 = new BottleMaker("Milton", 1200);
+let b2 = new BottleMaker("Milton", 1200, "yellow", "metal");
 let h1 = new HumanMaker("Rayied", true);
 // let h2 = new HumanMaker2("Rayied");
+let b3 = new BottleMaker("Cello", 100, "transparent", "plastic");
+let ms = new Music("Sanam re", "atif aslam", "", 200, true);
 //# sourceMappingURL=classes_objects.js.map
