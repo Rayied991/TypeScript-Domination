@@ -28,10 +28,25 @@ class BottleMaker {
         this.price = price;
         this.color = color;
         this.material = material;
+        this.brand = brand;
+        this.price = price;
+        this.color = color;
+        this.material = material;
+        // 1.parameter name
+        // 2.this.name [variable made by us]
+        // public name=name;
     }
 }
 class Music {
     constructor(name, artist, thumbnail = "semethumbnail.jpg", length, free) {
+        this.name = name;
+        this.artist = artist;
+        this.thumbnail = thumbnail;
+        this.length = length;
+        this.free = free;
+        // if(!thumbnail){
+        //   this.thumbnail=thumbnail;
+        // }
         this.name = name;
         this.artist = artist;
         this.thumbnail = thumbnail;
@@ -55,4 +70,35 @@ let h1 = new HumanMaker("Rayied", true);
 // let h2 = new HumanMaker2("Rayied");
 let b3 = new BottleMaker("Cello", 100, "transparent", "plastic");
 let ms = new Music("Sanam re", "atif aslam", "", 200, true);
+ms.artist = "halua";
+// This keyword
+class abcd {
+    constructor() {
+        this.name = "ray";
+    }
+    // method
+    changemore() {
+        console.log("changing");
+    }
+    changeName() {
+        // this.name
+        console.log(this.name);
+        let a = 12;
+        this.changemore = () => {
+            console.log("first");
+        };
+    }
+}
+// access modifiers(public,private,protected)
+class BottleMaker2 {
+    // constructor(
+    //   public name: string,
+    // ) {
+    // }
+    constructor(name) {
+        this.name = name;
+    }
+}
+let bt1 = new BottleMaker2("Milton");
+bt1.name = "hululu";
 //# sourceMappingURL=classes_objects.js.map
